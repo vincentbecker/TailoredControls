@@ -1,0 +1,13 @@
+actions_url: http://127.0.0.1:1880/actions/
+compile_pyx_on_startup: true
+event_sink_url: http://127.0.0.1:1880/touchets/
+finger_depth_threshold: 5
+finger_height_measure_radius: 7
+finger_height_threshold: 10
+fingertip_intersection_radius: 7
+hand_depth_threshold: 1
+hand_shape_intersection_border: 15
+shape_confirm_frames: 15
+shape_icp_border_thickness: 2
+shape_icp_pixels: 500
+shape_saturation_threshold: 115
