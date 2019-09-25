@@ -54,6 +54,7 @@ One option to use  TailoredControls is to connect it to a Node-RED flow to furth
 
 The flow should look like this:
 ![Node-RED flow](/images/node-red.png)
+
 It consists of two parts. The lower one simply returns a JSON array of strings to TailoredControls containing the available actions upon a GET-request (here we simply use `Lamp`, imagine we were building an application to contorl a smart lamp). 
 
 The one above contains the application logic. We first filter for events which have an action attribute in order to exclude all the other events which are generated when the hand is moved or the surface is touched. We then only forward events which are `pressed`-events, i.e. results from the Button touchet. Now run TailoredControls as explained above, add a paper snippet and add the `Lamp` action and the Button touchet to it (you can add more touchets but they will be filtered out in the flow). When touching the paper snippet you should see the event information in Node-RED's debug view. 
